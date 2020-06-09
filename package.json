@@ -1,0 +1,11 @@
+{
+  "name": "tp-creer-une-pwa",
+  "version": "1.0.0",
+  "description": "Créer une PWA",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "CASTANER Antony",
+  "license": "ISC"
+}

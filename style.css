@@ -1,0 +1,90 @@
+html, body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+}
+
+header {
+    width: 33%;
+}
+
+main {
+    width: 66%;
+    height: 100vh;
+}
+
+main .card-group {
+    width: 100%;
+    display: flex;
+}
+
+main .card {
+    width: 50%;
+    height: 50vh;
+}
+
+main .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .card .description {
+    width: 100%;
+    height: 100%;
+}
+
+main .card .description h2 {
+    position: relative;
+    top: -100%;
+    left: 5%;
+}
+
+main .card .description h2 {
+    width: 40%;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    padding: 2vh 5%;
+}
+
+main .card .description ul {
+    width: 40%;
+    padding: 3vh 5%;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    list-style: none;
+    font-size: 0.9em;
+    position: relative;
+    top: -100%;
+    border: 2px solid black;
+}
+
+main .card-group:first-child .card:last-child .description h2 {
+    left: 45%;
+}
+
+main .card-group:first-child .card:last-child .description ul, main .card-group:last-child .card:last-child .description ul {
+    left: 45%;
+}
+
+main .card-group:last-child .card .description {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+main .card-group:last-child .card:last-child .description h2 {
+    left: 45%;
+}
+
+main .card-group:first-child .card:first-child .description ul, main .card-group:last-child .card:first-child .description ul {
+    left: 5%;
+}
