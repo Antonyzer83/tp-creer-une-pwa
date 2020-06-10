@@ -9,8 +9,89 @@ html {
     body {
         margin: 0;
 
+        header {
+            height: 5vh;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 4px solid black;
+
+            #logo {
+                img {
+                    height: 10vh;
+                    width: 9vh;
+                    object-fit: cover;
+                    border: 4px solid black;
+                    margin-top: 0.6vh;
+                    margin-left: 5%;
+                    background-color: white;
+                }
+            }
+
+            nav {
+                display: none;
+            }
+
+            #menu {
+                margin: 1vh 5% 1.5vh 0;
+
+                img {
+                    width: 3.2vh;
+                }
+            }
+        }
+
+        main {
+            .card-group {
+                
+                .card {
+                    display: flex;
+                    text-align: center;
+
+                    img, .description {
+                        width: 50%;
+                        height: 23.75vh;
+                    }
+
+                    .description {
+
+                        h2 {
+                            position: relative;
+                            top: 25%;
+                            font-size: 4em;
+                            font-weight: bolder;
+                        }
+                        
+                        ul {
+                            display: none;
+                        }
+
+                        h3 {
+                            position: relative;
+                            top: 35%;
+                            left: 10%;
+                            width: 80%;
+                            padding: 5% 0;
+                            font-size: 1.8em;
+                            color: white;
+                            background-color: black;
+                            font-weight: normal;;
+                        }
+                    }
+
+                    img {
+                        object-fit: cover;
+                    }
+                
+                    &:first-child {
+                        flex-direction: row-reverse;
+                    }
+                }
+            }
+        }
+
         @media only screen and (min-width: 1024px) {
             display: flex;
+            justify-content: initial;
 
             header {
                 width: 34%;
@@ -29,11 +110,12 @@ html {
                         height: 28vh;
                         width: 30%;
                         margin-top: 10vh;
-                        border: 1px solid black;
+                        margin-left: 0;
                     }
                 }
     
                 nav {
+                    display: block;
                     text-align: left;
                     width: 30%;
                     margin-left: 29%;
@@ -42,6 +124,10 @@ html {
                     ul li {
                         line-height: 1.5em;
                     }
+                }
+
+                #menu {
+                    display: none;
                 }
             }
     
@@ -54,8 +140,10 @@ html {
                     display: flex;
     
                     .card {
+                        display: block;
                         width: 50%;
                         height: 50vh;
+                        text-align: left;
     
                         img {
                             width: 100%;
@@ -72,6 +160,7 @@ html {
     
                             h2 {
                                 position: relative;
+                                top: 0;
                                 left: 5%;
                                 width: 30%;
                                 font-size: 0.8em;
@@ -83,6 +172,7 @@ html {
                             }
     
                             ul {
+                                display: block;
                                 position: relative;
                                 width: 30%;
                                 padding: 3vh 5%;
@@ -96,6 +186,10 @@ html {
                                 li {
                                     line-height: 1.5em;
                                 }
+                            }
+
+                            h3 {
+                                display: none;
                             }
                         }
                     }
