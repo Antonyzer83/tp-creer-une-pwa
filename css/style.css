@@ -51,6 +51,9 @@ html body main .card-group .card img, html body main .card-group .card .descript
   width: 50%;
   height: 23.75vh;
 }
+html body main .card-group .card .description {
+  position: relative;
+}
 html body main .card-group .card .description h2 {
   position: relative;
   top: 25%;
@@ -61,12 +64,12 @@ html body main .card-group .card .description ul {
   display: none;
 }
 html body main .card-group .card .description h3 {
-  position: relative;
-  top: 35%;
-  left: 10%;
+  position: absolute;
+  margin-left: 10%;
+  bottom: 0;
   width: 80%;
-  padding: 5% 0;
-  font-size: 2.2em;
+  padding: 3% 0;
+  font-size: 2.3em;
   color: white;
   background-color: black;
   font-weight: normal;
@@ -93,6 +96,7 @@ html body main .card-group .card:first-child {
   }
   html body main .card-group .card .description {
     width: 34%;
+    position: initial;
   }
   html body main .card-group .card .description h2 {
     height: 10%;
