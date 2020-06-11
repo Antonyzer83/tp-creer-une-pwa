@@ -6,6 +6,18 @@ html, html body {
 }
 html body {
   margin: 0;
+  /*
+      Tablet portrait
+  */
+  /*
+      Tablet landscape
+  */
+  /*
+      Dekstop
+  */
+  /*
+      Common point between dekstop and tablet landscape
+  */
 }
 html body header {
   height: 5vh;
@@ -54,7 +66,7 @@ html body main .card-group .card .description h3 {
   left: 10%;
   width: 80%;
   padding: 5% 0;
-  font-size: 1.8em;
+  font-size: 2.2em;
   color: white;
   background-color: black;
   font-weight: normal;
@@ -65,7 +77,93 @@ html body main .card-group .card img {
 html body main .card-group .card:first-child {
   flex-direction: row-reverse;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html body header #logo {
+    position: relative;
+    left: 45.5%;
+  }
+  html body header #logo img {
+    height: 11vh;
+  }
+  html body header #menu {
+    margin-right: 3%;
+  }
+  html body main .card-group .card img {
+    width: 66%;
+  }
+  html body main .card-group .card .description {
+    width: 34%;
+  }
+  html body main .card-group .card .description h2 {
+    height: 10%;
+    position: initial;
+    font-size: 1.4em;
+  }
+  html body main .card-group .card .description ul {
+    height: 90%;
+    display: block;
+    background-color: black;
+    color: white;
+    list-style: none;
+    text-align: left;
+    line-height: 1.5em;
+    padding-top: 2vh;
+  }
+  html body main .card-group .card .description h3 {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  html body header {
+    height: 10vh;
+    border: 1px solid black;
+  }
+  html body header #logo {
+    margin-top: 2vh;
+  }
+  html body header #logo img {
+    height: 16vh;
+    width: 13vh;
+    border: 2px solid black;
+  }
+  html body header nav {
+    display: inline-block;
+    margin-top: 1vh;
+    width: 40%;
+  }
+  html body header nav ul {
+    text-align: center;
+  }
+  html body header nav ul li {
+    display: inline;
+    font-size: 1.5em;
+    margin: 0 2%;
+  }
+  html body header nav ul li:first-child {
+    margin-left: 0;
+  }
+  html body header nav ul li:last-child {
+    margin-right: 0;
+  }
+  html body header #menu {
+    display: none;
+  }
+  html body main {
+    height: 90vh;
+  }
+  html body main .card-group .card {
+    height: 45vh;
+  }
+  html body main .card-group .card .description h2 {
+    height: 5%;
+    font-size: 0.9em;
+  }
+  html body main .card-group .card .description ul {
+    height: auto;
+    font-size: 0.9em;
+  }
+}
+@media only screen and (min-width: 1025px) {
   html body {
     display: flex;
     justify-content: initial;
@@ -85,6 +183,7 @@ html body main .card-group .card:first-child {
     width: 30%;
     margin-top: 10vh;
     margin-left: 0;
+    border: 1px solid black;
   }
   html body header nav {
     display: block;
@@ -103,6 +202,14 @@ html body main .card-group .card:first-child {
     width: 66%;
     height: 100vh;
   }
+  html body main .card-group .card {
+    height: 50vh;
+  }
+  html body main .card-group .card .description h2, html body main .card-group .card .description ul {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width: 1025px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   html body main .card-group {
     width: 100%;
     display: flex;
@@ -110,7 +217,6 @@ html body main .card-group .card:first-child {
   html body main .card-group .card {
     display: block;
     width: 50%;
-    height: 50vh;
     text-align: left;
   }
   html body main .card-group .card img {
@@ -129,7 +235,6 @@ html body main .card-group .card:first-child {
     top: 0;
     left: 5%;
     width: 30%;
-    font-size: 0.8em;
     font-weight: bold;
     background-color: white;
     border: 2px solid black;
@@ -144,7 +249,7 @@ html body main .card-group .card:first-child {
     background-color: black;
     color: white;
     border: 2px solid black;
-    opacity: 0.8;
+    opacity: 0.6;
     list-style: none;
     font-size: 0.8em;
   }
@@ -164,6 +269,9 @@ html body main .card-group .card:first-child {
     display: flex;
     flex-direction: column-reverse;
     top: -102%;
+  }
+  html body main .card-group:last-child .card .description ul {
+    top: 3%;
   }
   html body main .card-group:last-child .card:first-child .description ul {
     left: 5%;
